@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+.container-style {
+    border-top: 1px solid black;
+}
+
+h2{
+    font-weight: 100;
+}
+
+
+/* start of nav */
+
+
+.container-style .nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px; /* Adding space of 10px underneath the border top */
+}
+
+.nav-box {
+    display: flex;
+    align-items: flex-start; /* Align content to the top of the box */
+    justify-content: space-between;
+    height: 100px; /* Adjusted height */
+    background-color: blue;
+    padding: 0px; /* Adjusted padding */
+}
+
+
+.nav-box.nav-box-1 {
+    justify-content: flex-start; /* Align first .nav-box to flex-start */
+}
+
+.nav-box.nav-box-2 {
+    justify-content: flex-end; /* Align second .nav-box to flex-end */
+}
+
+.nav-box a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-box-2 a:not(:last-child) {
+    margin-right: 50px; /* Add margin between the links in nav-box-2 */
+}
+
+.h2-top {
+    margin-top: 0; /* Remove default margin to align h2 to the top */
+}
+
+/* end of nav */
+
+/* start of the main page */
+
+.description-txt{
+    margin-right: 20%;
+
+}
+
+.portrait-1{
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
