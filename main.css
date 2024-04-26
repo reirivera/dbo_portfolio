@@ -13,6 +13,7 @@ body {
     padding-top: 15px;
 }
 
+
 h2 {
     font-weight: lighter;
     margin-top: 0;
@@ -25,15 +26,21 @@ a {
 
 li {
     list-style: none;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 /* Start of nav */
 
 .hamburger-menu {
     display: block; /* Always visible */
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    top: 5;
+    position:fixed;
     cursor: pointer;
     color: black;
+    background-color: white;
     font-size: 1em; /* Adjust the font size as needed */
     z-index: 3; /* Ensure it covers other elements */
 }
@@ -46,16 +53,13 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
-    z-index: 1; /* Ensure it covers other elements */
+    background-color:white;
+    z-index: 2; /* Ensure it covers other elements */
 }
-
 
 .container-style .nav-container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    z-index: 5;
 }
 
 .menu {
@@ -65,6 +69,7 @@ li {
     font-weight: 100;
     top: 25%;
     left: 50px;
+    right: 50px;
     z-index: 2; /* Ensure it appears above other elements */
 }
 
@@ -141,7 +146,7 @@ footer {
     left: 50px;
     right: 50px;
     background-color: white; /* Optional: Add background color */
-    z-index: 4;
+    z-index: 1;
 }
 
 .footer-container {
@@ -176,6 +181,7 @@ footer {
         position: fixed;
         top: 25%;
         left: 25px;
+        right: 25px;
         color: black;
         padding: 20px;
         z-index: 2; /* Ensure it appears above black screen */
@@ -221,6 +227,7 @@ footer {
         position: fixed;
         top: 25%;
         left: 25px;
+        right: 25px;
         color: black;
         padding: 20px;
         z-index: 2; /* Ensure it appears above black screen */
