@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>DBO</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -61,6 +61,7 @@
                 <div class="footer-container">
                     <div class="footer-left">
                         <a href="https://www.behance.net/your-behance-page"><p>Behance</p></a>
+                        <a href=""><p>Linkedin</p></a>
                     </div>
                     <div class="footer-right">
                         <p id="time-and-location"></p>
@@ -77,10 +78,21 @@
 
         window.addEventListener('load', function() {
             var timeAndLocation = document.getElementById('time-and-location');
-            var currentDate = new Date();
-            var timeString = currentDate.toLocaleTimeString();
-            timeAndLocation.textContent = timeString;
+            
+            // Function to update the time
+            function updateTime() {
+                var currentDate = new Date();
+                var timeString = currentDate.toLocaleTimeString();
+                timeAndLocation.textContent = timeString;
+            }
+            
+            // Initial call to update the time
+            updateTime();
+            
+            // Set interval to update the time every second
+            setInterval(updateTime, 1000);
         });
+
 
 
     </script>
