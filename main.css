@@ -13,25 +13,31 @@ body {
     padding-top: 15px;
 }
 
-h2{
+h2 {
     font-weight: lighter;
     margin-top: 0;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
+li {
+    list-style: none;
+    margin-bottom: 15px;
+}
 
-/* start of nav */
+/* Start of nav */
 
 .hamburger-menu {
-    display: none; /* Hide initially */
+    display: block; /* Always visible */
     cursor: pointer;
     color: black;
-    font-size: 25px; /* Adjust the font size as needed */
+    font-size: 1em; /* Adjust the font size as needed */
+    z-index: 3; /* Ensure it covers other elements */
 }
+
 
 .black-screen {
     display: none; /* Hide initially */
@@ -40,18 +46,26 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: white;
     z-index: 1; /* Ensure it covers other elements */
-}
-
-.menu{
-    display: block;
 }
 
 
 .container-style .nav-container {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+
+.menu {
+    display: none; /* Change display to flex */
+    position: fixed;
+    font-size: 2em;
+    font-weight: 100;
+    top: 25%;
+    left: 50px;
+    z-index: 2; /* Ensure it appears above other elements */
 }
 
 .nav-box {
@@ -61,7 +75,6 @@ a{
     height: 100px; /* Adjusted height */
     padding: 0px; /* Adjusted padding */
 }
-
 
 .nav-box.nav-box-1 {
     justify-content: flex-start; /* Align first .nav-box to flex-start */
@@ -85,23 +98,20 @@ a{
     margin-top: 0; /* Remove default margin to align h2 to the top */
 }
 
-/* end of nav */
+/* End of nav */
 
-/* start of the main page */
+/* Start of the main page */
 
-
-.description-txt{
+.description-txt {
     margin-right: 20%;
-
 }
 
-.portrait-1{
+.portrait-1 {
     background-color: red;
     width: 100%;
     height: 500px;
     margin-bottom: 60px;
 }
-
 
 .home-portfolio {
     display: flex;
@@ -120,19 +130,18 @@ a{
 .home-portfolio img {
 }
 
-/* end of the main page */
+/* End of the main page */
 
+/* Start of the footer */
 
-/* start of the footer */
-
-
-footer{
+footer {
     position: fixed; /* Set the position to fixed */
     bottom: 0; /* Position at the bottom */
     height: 40px;
     left: 50px;
     right: 50px;
     background-color: white; /* Optional: Add background color */
+    z-index: 4;
 }
 
 .footer-container {
@@ -148,7 +157,6 @@ footer{
     margin: 0;
 }
 
-
 .footer-right {
     text-align: right;
 }
@@ -157,13 +165,22 @@ footer{
     margin: 0; /* Reset margin to override default margin */
 }
 
+
 /* CSS for tablet breakpoint */
 
 @media screen and (max-width: 768px) {
+    
 
     .menu {
         display: none; /* Hide menu for phone breakpoint */
-    }
+        position: fixed;
+        top: 25%;
+        left: 25px;
+        color: black;
+        padding: 20px;
+        z-index: 2; /* Ensure it appears above black screen */
+
+    }    
     
     .hamburger-menu {
         display: block; /* Show hamburger menu for phone breakpoint */
@@ -189,7 +206,7 @@ footer{
     }
 
     .h2-top {
-        font-size: 2em;
+        font-size: 1.8em;
         margin-top: 0; /* Remove default margin to align h2 to the top */
     }
     
@@ -201,13 +218,22 @@ footer{
 
     .menu {
         display: none; /* Hide menu for phone breakpoint */
-    }
+        position: fixed;
+        top: 25%;
+        left: 25px;
+        color: black;
+        padding: 20px;
+        z-index: 2; /* Ensure it appears above black screen */
+
+    }   
     
     .hamburger-menu {
         display: block; /* Show hamburger menu for phone breakpoint */
         font-size: 20px; /* Adjust the font size as needed */
+        z-index: 2;
     }
 
+    
     .container {
         padding: 10px 10px;
     }

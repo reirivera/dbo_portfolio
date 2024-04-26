@@ -8,104 +8,108 @@
 </head>
 <body>
 
-    <div class="container">
-       
-       
-        <nav class="container-style">
+<div class="container">
 
-            <div class="nav-container">
-                
-                <div class="nav-box nav-box-1">
-                    <a href="index.html"><h2 class="h2-top" >Diego Benavides Ortiz</h2></a>
+
+    <nav class="container-style">
+
+        <div class="nav-container">
+
+            <div class="nav-box nav-box-1">
+                <a href="index.html"><h2 class="h2-top">Diego Benavides Ortiz</h2></a>
+            </div>
+
+            <div class="nav-box nav-box-2">
+
+                <div class="hamburger-menu" onclick="toggleMenu()">Menu</div>
+                <div class="black-screen" onclick="toggleMenu()"></div>
+
+                <div class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </div>
 
-                <div class="nav-box nav-box-2">
-                    
-                    <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
-                    <div class="black-screen" onclick="toggleMenu()"></div>
-
-                    <div class="menu">
-                        <a href="about.html">About</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-
-                </div>
-
-        </div>
-
-        <div class="container-style">
-
-            <h2 class="description-txt" >Hello there! I am a creative graphic designer who finds joy in collaboration 
-                and innovation. With a disciplined approach, I blend my creativity seamlessly 
-                with strategic thinking to craft meaningful designs. I believe in the power 
-                of teamwork and enjoy working closely with others to bring ideas to life. </h2>
-
-            <img src="" alt="" class="portrait-1">
-
-        </div>
-
-        <div class="container-style">
-
-            <div class="home-portfolio">
-                <a href="#"><img src="placeholder1.jpg" alt="Project 1"></a>
-                <a href="#"><img src="placeholder2.jpg" alt="Project 2"></a>
-                <a href="#"><img src="placeholder3.jpg" alt="Project 3"></a>
-                <a href="#"><img src="placeholder4.jpg" alt="Project 4"></a>
-                <a href="#"><img src="placeholder5.jpg" alt="Project 5"></a>
-                <a href="#"><img src="placeholder6.jpg" alt="Project 6"></a>
             </div>
 
         </div>
 
+    </nav>
 
-        <footer class="container-style">
+    <div class="container-style">
 
-                <div class="footer-container">
-                    <div class="footer-left">
-                        <a href="https://www.behance.net/your-behance-page"><p>Behance</p></a>
-                        <a href=""><p>Linkedin</p></a>
-                    </div>
-                    <div class="footer-right">
-                        <p id="time-and-location"></p>
-                    </div>
-                </div>
+        <h2 class="description-txt">Hello there! I am a creative graphic designer who finds joy in collaboration
+            and innovation. With a disciplined approach, I blend my creativity seamlessly
+            with strategic thinking to craft meaningful designs. I believe in the power
+            of teamwork and enjoy working closely with others to bring ideas to life. </h2>
 
-        </footer>
+        <img src="" alt="" class="portrait-1">
 
-    
-    
     </div>
 
-    <script>
+    <div class="container-style">
 
-        window.addEventListener('load', function() {
-            var timeAndLocation = document.getElementById('time-and-location');
-            
-            // Function to update the time
-            function updateTime() {
-                var currentDate = new Date();
-                var timeString = currentDate.toLocaleTimeString();
-                timeAndLocation.textContent = timeString;
-            }
-            
-            // Initial call to update the time
-            updateTime();
-            
-            // Set interval to update the time every second
-            setInterval(updateTime, 1000);
-        });
+        <div class="home-portfolio">
+            <a href="#"><img src="placeholder1.jpg" alt="Project 1"></a>
+            <a href="#"><img src="placeholder2.jpg" alt="Project 2"></a>
+            <a href="#"><img src="placeholder3.jpg" alt="Project 3"></a>
+            <a href="#"><img src="placeholder4.jpg" alt="Project 4"></a>
+            <a href="#"><img src="placeholder5.jpg" alt="Project 5"></a>
+            <a href="#"><img src="placeholder6.jpg" alt="Project 6"></a>
+        </div>
 
-        function toggleMenu() {
-            var menu = document.querySelector('.menu');
-            var blackScreen = document.querySelector('.black-screen');
-            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-            blackScreen.style.display = (blackScreen.style.display === 'block') ? 'none' : 'block';
+    </div>
+
+
+    <footer class="container-style">
+
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="https://www.behance.net/your-behance-page"><p>Behance</p></a>
+                <a href=""><p>Linkedin</p></a>
+            </div>
+            <div class="footer-right">
+                <p id="time-and-location"></p>
+            </div>
+        </div>
+
+    </footer>
+
+</div>
+
+<script>
+
+    // Define toggleMenu function globally
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        var blackScreen = document.querySelector('.black-screen');
+        var hamburgerMenu = document.querySelector('.hamburger-menu');
+
+        // Toggle menu visibility
+        var menuIsVisible = menu.style.display === 'block';
+        menu.style.display = menuIsVisible ? 'none' : 'block';
+        blackScreen.style.display = menuIsVisible ? 'none' : 'block';
+        hamburgerMenu.innerHTML = menuIsVisible ? 'Menu' : 'Close'; // Change hamburger menu content
+    }
+
+    window.addEventListener('load', function () {
+        var timeAndLocation = document.getElementById('time-and-location');
+
+        // Function to update the time
+        function updateTime() {
+            var currentDate = new Date();
+            var timeString = currentDate.toLocaleTimeString();
+            timeAndLocation.textContent = timeString;
         }
 
+        // Initial call to update the time
+        updateTime();
 
+        // Set interval to update the time every second
+        setInterval(updateTime, 1000);
+    });
 
-    </script>
+</script>
 
 </body>
 </html>
