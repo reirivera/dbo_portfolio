@@ -58,6 +58,13 @@
             <a href="#"><img src="placeholder5.jpg" alt="Project 5"></a>
             <a href="#"><img src="placeholder6.jpg" alt="Project 6"></a>
         </div>
+        
+        <div class="hello-btn">
+           
+            <a href="contact.html"><h1 class="hello">Say Hello!</h1></a>
+
+        </div>
+            
 
     </div>
 
@@ -66,6 +73,7 @@
 
         <div class="footer-container">
             <div class="footer-left">
+                <button id="scrollToTopBtn" class="arrow-btn">↑</button>
                 <a href="https://www.behance.net/your-behance-page"><p>Behance</p></a>
                 <a href=""><p>Linkedin</p></a>
             </div>
@@ -108,6 +116,18 @@
 
         // Set interval to update the time every second
         setInterval(updateTime, 1000);
+    });
+
+    // Get the button element
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Add a click event listener to the button
+    scrollToTopBtn.addEventListener("click", function() {
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
 
 </script>

@@ -24,6 +24,10 @@ a {
     color: black;
 }
 
+img{
+    border-radius: 100%;
+}
+
 li {
     list-style: none;
     margin-bottom: 12px;
@@ -34,7 +38,7 @@ li {
 .hamburger-menu {
     display: block; /* Always visible */
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 100%;
     padding: 10px;
     top: 5;
     position:fixed;
@@ -67,7 +71,7 @@ li {
     position: fixed;
     font-size: 2em;
     font-weight: 100;
-    top: 25%;
+    top: 55%;
     left: 50px;
     right: 50px;
     z-index: 2; /* Ensure it appears above other elements */
@@ -103,6 +107,7 @@ li {
     margin-top: 0; /* Remove default margin to align h2 to the top */
 }
 
+
 /* End of nav */
 
 /* Start of the main page */
@@ -121,7 +126,8 @@ li {
 .home-portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    gap: 5px;
 }
 
 .home-portfolio a {
@@ -130,10 +136,32 @@ li {
     width: 100%;
     height: 400px;
     background-color: red; /* Placeholder color */
+    border-radius: 15px;
 }
 
 .home-portfolio img {
 }
+
+.hello-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    height: 300px;
+    margin-bottom: 10px;
+    
+}
+
+.hello{
+    font-size: 4em;
+    font-weight: 100;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 40px;
+}
+
+
 
 /* End of the main page */
 
@@ -142,7 +170,7 @@ li {
 footer {
     position: fixed; /* Set the position to fixed */
     bottom: 0; /* Position at the bottom */
-    height: 40px;
+    height: 60px;
     left: 50px;
     right: 50px;
     background-color: white; /* Optional: Add background color */
@@ -158,7 +186,7 @@ footer {
 .footer-left {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 15px;
     margin: 0;
 }
 
@@ -167,7 +195,17 @@ footer {
 }
 
 .footer-container p {
-    margin: 0; /* Reset margin to override default margin */
+    margin: 10px; /* Reset margin to override default margin */
+}
+
+.arrow-btn {
+    background: none;
+    border: 1px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 16px; /* Adjust font size as needed */
+    outline: none; /* Remove outline when button is focused */
 }
 
 
@@ -179,7 +217,7 @@ footer {
     .menu {
         display: none; /* Hide menu for phone breakpoint */
         position: fixed;
-        top: 25%;
+        top: 55%;
         left: 25px;
         right: 25px;
         color: black;
@@ -225,7 +263,7 @@ footer {
     .menu {
         display: none; /* Hide menu for phone breakpoint */
         position: fixed;
-        top: 25%;
+        top: 55%;
         left: 25px;
         right: 25px;
         color: black;
@@ -237,7 +275,7 @@ footer {
     .hamburger-menu {
         display: block; /* Show hamburger menu for phone breakpoint */
         font-size: 20px; /* Adjust the font size as needed */
-        z-index: 2;
+        z-index: 4;
     }
 
     
