@@ -5,15 +5,22 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    background-color: #fcf7f0;
 }
 
 
 .container {
-    padding: 20px 50px;
+    padding: 10px 50px;
 }
 
 .container-style {
     border-top: 1px solid black;
+    padding-top: 15px;
+}
+
+.container-style-2{
+    display: flex;
+    flex-direction: column;
     padding-top: 15px;
 }
 
@@ -34,8 +41,9 @@ a:hover{
 }
 
 img{
-    border-radius: 100%;
+    border-radius: 15px;
 }
+
 
 li {
     list-style: none;
@@ -53,7 +61,7 @@ li {
     position:fixed;
     cursor: pointer;
     color: black;
-    background-color: white;
+    background-color: #fcf7f0;
     font-size: 1em; /* Adjust the font size as needed */
     z-index: 3; /* Ensure it covers other elements */
 }
@@ -70,7 +78,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #fcf7f0;
     z-index: 2; /* Ensure it covers other elements */
 }
 
@@ -116,10 +124,6 @@ li {
 }
 
 .h2-top {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
     font-size: 2.2em;
     margin-top: 0; /* Remove default margin to align h2 to the top */
 }
@@ -131,20 +135,33 @@ li {
 
 .description-txt {
     margin-right: 20%;
-}
+    margin-bottom: 60px;
+} 
 
 .portrait-1 {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    border-radius: 0;
+}
+
+.portrait-2 {
     background-color: red;
     width: 100%;
     height: 500px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
+
 
 .home-portfolio {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
     gap: 5px;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
 }
 
 .home-portfolio a {
@@ -198,7 +215,7 @@ footer {
     height: 60px;
     left: 50px;
     right: 50px;
-    background-color: white; /* Optional: Add background color */
+    background-color: #fcf7f0;
     z-index: 1;
 }
 
@@ -257,6 +274,7 @@ footer {
     
     .hamburger-menu {
         display: block; /* Show hamburger menu for phone breakpoint */
+        font-size: 0.5em;
     }
 
     .nav-box {
@@ -271,11 +289,15 @@ footer {
         margin-right: 10%;
     }
 
-    .portrait-1{
+    .portrait-2{
         background-color: red;
         width: 100%;
         height: 400px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
+    }
+
+    .hello{
+        font-size: 3em;
     }
 
     .h2-top {
@@ -302,7 +324,7 @@ footer {
     
     .hamburger-menu {
         display: block; /* Show hamburger menu for phone breakpoint */
-        font-size: 20px; /* Adjust the font size as needed */
+        font-size: 0.5em; /* Adjust the font size as needed */
         z-index: 4;
     }
     
@@ -318,11 +340,15 @@ footer {
         margin-right: 10%;
     }
 
-    .portrait-1{
+    .portrait-2{
         background-color: red;
         width: 100%;
         height: 400px;
-        margin-bottom: 30px;
+        margin-bottom: 100px;
+    }
+
+    .hello{
+        font-size: 3em;
     }
 
     .h2-top {
