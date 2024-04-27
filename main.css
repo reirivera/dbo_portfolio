@@ -1,8 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
+
 
 .container {
     padding: 20px 50px;
@@ -23,6 +27,11 @@ a {
     text-decoration: none;
     color: black;
 }
+a:hover{
+        opacity: 0.5; /* Adjust opacity as desired */
+        transition: opacity 0.4s ease;
+
+}
 
 img{
     border-radius: 100%;
@@ -30,7 +39,7 @@ img{
 
 li {
     list-style: none;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 /* Start of nav */
@@ -49,6 +58,10 @@ li {
     z-index: 3; /* Ensure it covers other elements */
 }
 
+.hamburger-menu:hover{
+    opacity: 0.5; /* Adjust opacity as desired */
+    transition: opacity 0.4s ease;
+} 
 
 .black-screen {
     display: none; /* Hide initially */
@@ -57,7 +70,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:white;
+    background-color: white;
     z-index: 2; /* Ensure it covers other elements */
 }
 
@@ -69,9 +82,9 @@ li {
 .menu {
     display: none; /* Change display to flex */
     position: fixed;
-    font-size: 2em;
-    font-weight: 100;
-    top: 55%;
+    font-size: 3em;
+    font-weight: 300;
+    top: 45%;
     left: 50px;
     right: 50px;
     z-index: 2; /* Ensure it appears above other elements */
@@ -103,6 +116,10 @@ li {
 }
 
 .h2-top {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
     font-size: 2.2em;
     margin-top: 0; /* Remove default margin to align h2 to the top */
 }
@@ -154,6 +171,10 @@ li {
 }
 
 .hello{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
     font-size: 4em;
     font-weight: 100;
     border: 1px solid black;
@@ -161,6 +182,10 @@ li {
     padding: 40px;
 }
 
+.hello:hover{
+    opacity: 0.5; /* Adjust opacity as desired */
+    transition: opacity 0.4s ease;
+} 
 
 
 /* End of the main page */
@@ -208,6 +233,11 @@ footer {
     outline: none; /* Remove outline when button is focused */
 }
 
+.arrow-btn:hover{
+    opacity: 0.5; /* Adjust opacity as desired */
+    transition: opacity 0.4s ease;
+} 
+
 
 /* CSS for tablet breakpoint */
 
@@ -217,10 +247,9 @@ footer {
     .menu {
         display: none; /* Hide menu for phone breakpoint */
         position: fixed;
-        top: 55%;
+        top: 45%;
         left: 25px;
         right: 25px;
-        color: black;
         padding: 20px;
         z-index: 2; /* Ensure it appears above black screen */
 
@@ -263,10 +292,9 @@ footer {
     .menu {
         display: none; /* Hide menu for phone breakpoint */
         position: fixed;
-        top: 55%;
+        top: 45%;
         left: 25px;
         right: 25px;
-        color: black;
         padding: 20px;
         z-index: 2; /* Ensure it appears above black screen */
 
@@ -277,7 +305,6 @@ footer {
         font-size: 20px; /* Adjust the font size as needed */
         z-index: 4;
     }
-
     
     .container {
         padding: 10px 10px;
