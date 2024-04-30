@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBO</title>
+    <title>D+O</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,14 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
-                    <img src="img/name.svg" alt="" class="do-font">
+                    <img src="img/Name_white.svg" alt="" class="do-font">
+
+                    <div class="links">
+
+                        <a href="https://www.behance.net/your-behance-page"><p>Behance</p></a>
+                        <a href=""><p>Linkedin</p></a>
+
+                    </div>
 
                     <div class="links">
 
@@ -97,7 +104,7 @@
 
 <script>
 
- // Define toggleMenu function globally
+  // Define toggleMenu function globally
 function toggleMenu() {
     var menu = document.querySelector('.menu');
     var blackScreen = document.querySelector('.black-screen');
@@ -117,6 +124,10 @@ function toggleMenu() {
 
     // Change hamburger menu content
     hamburgerMenu.innerHTML = menuIsVisible ? 'Menu' : 'Fermé';
+
+    // Change hamburger menu font color and border color
+    hamburgerMenu.style.color = menuIsVisible ? 'black' : 'white';
+    hamburgerMenu.style.border = menuIsVisible ? '1px solid black' : '1px solid white';
 }
 
 // Function to fade in an element

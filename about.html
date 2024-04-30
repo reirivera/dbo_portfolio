@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBO</title>
+    <title>D+O</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
-                    <img src="img/name.svg" alt="" class="do-font">
+                    <img src="img/Name_white.svg" alt="" class="do-font">
 
                     <div class="links">
 
@@ -82,17 +82,19 @@
                 <div class="colonne-1">
 
                     Identité de Marque et Système <br>
-                    Développement de Concept <br>
-                    Création de Contenu <br>
-                    Design Éditorial <br>
+                    Typographie et mise en page <br>
+                    Édition d’images <br>
+                    Montage vidéo <br>
+                    Conception de logo <br>
 
                 </div>
 
                 <div class="colonne-1">
 
-                    Conception de Logo <br>
-                    Conception d'Impression <br>
-                    Conception d'Emballage <br>
+                    Conception d’emballages <br>
+                    Développement front-end <br>
+                    Conception UX/UI <br>
+                    Impression sérigraphique <br>
                     
                 </div>
 
@@ -124,7 +126,7 @@
 <script>
 
  // Define toggleMenu function globally
-function toggleMenu() {
+ function toggleMenu() {
     var menu = document.querySelector('.menu');
     var blackScreen = document.querySelector('.black-screen');
     var hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -143,6 +145,10 @@ function toggleMenu() {
 
     // Change hamburger menu content
     hamburgerMenu.innerHTML = menuIsVisible ? 'Menu' : 'Fermé';
+
+    // Change hamburger menu font color and border color
+    hamburgerMenu.style.color = menuIsVisible ? 'black' : 'white';
+    hamburgerMenu.style.border = menuIsVisible ? '1px solid black' : '1px solid white';
 }
 
 // Function to fade in an element
