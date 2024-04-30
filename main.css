@@ -5,7 +5,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    background-color: #fcf7f0;
+    background-color: #fdfdfd;
 }
 
 
@@ -61,7 +61,6 @@ li {
     position:fixed;
     cursor: pointer;
     color: black;
-    background-color: #fcf7f0;
     font-size: 1em; /* Adjust the font size as needed */
     z-index: 3; /* Ensure it covers other elements */
 }
@@ -92,7 +91,7 @@ li {
     position: fixed;
     font-size: 3em;
     font-weight: 300;
-    top: 45%;
+    top: 25%;
     left: 50px;
     right: 50px;
     z-index: 2; /* Ensure it appears above other elements */
@@ -128,6 +127,21 @@ li {
     margin-top: 0; /* Remove default margin to align h2 to the top */
 }
 
+.links{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5em;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+
+.do-font{
+    position: fixed;
+    bottom: 90px;
+    right: 50px;
+    width: 40%;
+}
 
 /* End of nav */
 
@@ -215,7 +229,7 @@ footer {
     height: 60px;
     left: 50px;
     right: 50px;
-    background-color: #fcf7f0;
+    background-color: #fdfdfd;
     z-index: 1;
 }
 
@@ -264,7 +278,7 @@ footer {
     .menu {
         display: none; /* Hide menu for phone breakpoint */
         position: fixed;
-        top: 45%;
+        top: 25%;
         left: 25px;
         right: 25px;
         padding: 20px;
@@ -304,6 +318,14 @@ footer {
         font-size: 1.8em;
         margin-top: 0; /* Remove default margin to align h2 to the top */
     }
+
+    .links{
+        font-size: 0.5em;
+    }
+    
+    .do-font{
+        bottom: 95px;
+    }
     
 }
 
@@ -314,7 +336,7 @@ footer {
     .menu {
         display: none; /* Hide menu for phone breakpoint */
         position: fixed;
-        top: 45%;
+        top: 25%;
         left: 25px;
         right: 25px;
         padding: 20px;
@@ -358,5 +380,13 @@ footer {
     footer {
         left: 10px;
         right: 10px;
+    }
+
+    .links{
+        font-size: 0.5em;
+    }
+    
+    .do-font{
+        bottom: 100px;
     }
 }

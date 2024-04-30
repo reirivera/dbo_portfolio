@@ -37,6 +37,15 @@
                     <li><a href="contact.html">Contact</a></li>
                 </div>
 
+                <img src="img/name.svg" alt="" class="do-font">
+
+                <div class="links">
+
+                    <a href="https://www.behance.net/your-behance-page"><p>Behance</p></a>
+                    <a href=""><p>Linkedin</p></a>
+
+                </div>
+
             </div>
 
         </div>
