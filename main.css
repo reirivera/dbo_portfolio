@@ -148,8 +148,8 @@ li {
 /* Start of the main page */
 
 .description-txt {
-    margin-right: 20%;
-    margin-bottom: 60px;
+    margin-right: 10%;
+    margin-bottom: 30px;
 } 
 
 .portrait-1 {
@@ -162,6 +162,20 @@ li {
 }
 
 .portrait-2 {
+    background-color: red;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.portrait-3 {
+    background-color: red;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.portrait-4 {
     background-color: red;
     width: 100%;
     height: 500px;
@@ -218,6 +232,14 @@ li {
     transition: opacity 0.4s ease;
 } 
 
+.service-colonne{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
 
 /* End of the main page */
 
