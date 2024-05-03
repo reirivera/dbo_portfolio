@@ -151,13 +151,6 @@ li {
     right: 50px;
 }
 
-.do-font{
-    position: fixed;
-    bottom: 90px;
-    right: 50px;
-    width: 40%;
-}
-
 /* End of nav */
 
 /* Start of the main page */
@@ -266,6 +259,46 @@ li {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 30px;
+}
+
+form{
+    font-weight: 400;
+    margin-bottom: 80px;
+
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input[type="submit"].email-submit {
+    width: 30%;
+    height: 40px; /* Adjust height as needed */
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    opacity: 1;
+}
+
+input[type="submit"].email-submit:hover {
+    opacity: 0.5; /* Adjust opacity as desired */
+    transition: opacity 0.4s ease;
+}
+
+textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 /* End of the main page */
