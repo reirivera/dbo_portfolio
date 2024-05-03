@@ -199,6 +199,7 @@ li {
 }
 
 .home-portfolio a {
+    position: relative;
     flex: 1 0 calc(50% - 10px); /* Two columns with 10px space in between */
     text-align: center;
     border-radius: 15px;
@@ -209,6 +210,7 @@ li {
     height: 100%;
     object-fit: cover;
 }
+
 
 .hello-btn{
     display: flex;
@@ -279,7 +281,9 @@ input[type="submit"].email-submit {
     margin-bottom: 20px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: #fdfdfd;
+    color: #fdfdfd;
+    font-weight: 400;
+    background-color: black;
     font-size: 16px; /* Adjust font size as needed */
     cursor: pointer; /* Change cursor to pointer on hover */
     opacity: 1;
@@ -489,4 +493,17 @@ footer {
     .do-font{
         bottom: 100px;
     }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation: fadeIn 1s ease-out both;
 }

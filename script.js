@@ -5,7 +5,8 @@ function toggleMenu() {
     var hamburgerMenu = document.querySelector('.hamburger-menu');
 
     // Toggle menu visibility
-    var menuIsVisible = menu.style.display === 'block';
+    var computedStyle = window.getComputedStyle(menu); // Get the computed style
+    var menuIsVisible = computedStyle.display === 'block';
 
     // Apply smooth opacity transition
     if (menuIsVisible) {
@@ -23,7 +24,6 @@ function toggleMenu() {
     hamburgerMenu.style.color = menuIsVisible ? 'black' : 'white';
     hamburgerMenu.style.border = menuIsVisible ? '1px solid black' : '1px solid white';
 }
-
 
 // Function to fade in an element
 function fadeIn(element) {
@@ -54,35 +54,12 @@ function fadeOut(element) {
     }, 30); // Adjust the interval for smoother or faster transition
 }
 
-
-    window.addEventListener('load', function () {
-        var timeAndLocation = document.getElementById('time-and-location');
-
-        // Function to update the time
-        function updateTime() {
-            var currentDate = new Date();
-            var timeString = currentDate.toLocaleTimeString();
-            timeAndLocation.textContent = timeString;
-        }
-
-        // Initial call to update the time
-        updateTime();
-
-        // Set interval to update the time every second
-        setInterval(updateTime, 1000);
-    });
-
-    // Get the button element
-    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-    // Add a click event listener to the button
-    scrollToTopBtn.addEventListener("click", function() {
-        // Scroll to the top of the page smoothly
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-
-
-    
+// Update time every second
+var timeAndLocation = document.getElementById('time-and-location');
+function updateTime() {
+    var currentDate = new Date();
+    var timeString = currentDate.toLocaleTimeString();
+    timeAndLocation.textContent = timeString;
+}
+updateTime();
+setInterval(updateTime, 1000);
